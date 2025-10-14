@@ -4,7 +4,7 @@ from django.urls import path, include
 
 from django.http import JsonResponse
 
-def home():
+def home(request):
     return JsonResponse({'Message':"The default mkulima digital home api"})
 urlpatterns = [
     path('admin/', admin.site.urls),
