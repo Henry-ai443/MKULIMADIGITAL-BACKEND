@@ -3,7 +3,7 @@ from django.contrib.auth.password_validation import validate_password
 from .models import CustomUser
 
 class RegisterSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
+    password = serializers.CharField(write_only=True, style={'input_type': 'password'})
 
     class Meta:
         model = CustomUser
