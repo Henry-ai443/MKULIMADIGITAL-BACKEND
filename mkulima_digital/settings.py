@@ -79,18 +79,17 @@ WSGI_APPLICATION = "mkulima_digital.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": os.getenv("DB_NAME"),
-        "USER": os.getenv("DB_USER"),
-        "PASSWORD": os.getenv("DB_PASSWORD"),
-        "HOST": os.getenv("DB_HOST"),
-        "PORT": os.getenv("DB_PORT"),
+        "NAME": os.getenv("MYSQL_ADDON_DB"),
+        "USER": os.getenv("MYSQL_ADDON_USER"),
+        "PASSWORD": os.getenv("MYSQL_ADDON_PASSWORD"),
+        "HOST": os.getenv("MYSQL_ADDON_HOST"),
+        "PORT": os.getenv("MYSQL_ADDON_PORT"),
         "OPTIONS": {
             "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
-            "ssl":{},
+            "ssl": {},
         },
     }
 }
-
 
 # ------------------------------
 # AUTHENTICATION
