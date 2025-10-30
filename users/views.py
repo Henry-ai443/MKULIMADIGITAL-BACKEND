@@ -46,6 +46,7 @@ class LoginView(APIView):
                 "message": "Login successful",
                 "user_details": {
                     "email": user.email,
+                    "role":user.role
                 },
                 "token": token.key
             }, status=status.HTTP_200_OK)
