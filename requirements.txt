@@ -1,8 +1,10 @@
 asgiref==3.10.0
 cffi==2.0.0
+cloudinary==1.35.0
 cryptography==46.0.2
 dj-database-url==3.0.1
 Django==5.2.7
+django-cloudinary-storage==0.3.0
 django-cors-headers==4.9.0
 djangorestframework==3.16.1
 gunicorn==23.0.0
